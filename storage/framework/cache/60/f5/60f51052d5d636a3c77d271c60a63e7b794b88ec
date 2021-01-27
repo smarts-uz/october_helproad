@@ -1,0 +1,43 @@
+1611734773a:1:{s:16:"home/service.htm";a:6:{s:8:"fileName";s:16:"home/service.htm";s:7:"content";s:1231:"[builderList]
+modelClass = "John\Priceservice\Models\PriceService"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "slug"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+{% for record in records %}
+    <div class="item shadow-2xl  lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500"> <img class='rounded-full' src=" {{ record.image|media }} " alt="">
+        <p class="py-4">{{ record.title }}</p>
+        <p  class=" py-4 font-extrabold text-lg">от {{ record.price }} руб.</p>
+        <button onclick="orderFormBtn()" class="font-extrabold text-blue-500 border-2 border-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white transition duration-300">Заказать</button>
+    </div>
+ {% else %}
+    <li class="no-data">{{ noRecordsMessage }}</li>
+{% endfor %}";s:5:"mtime";i:1611636381;s:6:"markup";s:978:"{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+{% for record in records %}
+    <div class="item shadow-2xl  lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500"> <img class='rounded-full' src=" {{ record.image|media }} " alt="">
+        <p class="py-4">{{ record.title }}</p>
+        <p  class=" py-4 font-extrabold text-lg">от {{ record.price }} руб.</p>
+        <button onclick="orderFormBtn()" class="font-extrabold text-blue-500 border-2 border-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white transition duration-300">Заказать</button>
+    </div>
+ {% else %}
+    <li class="no-data">{{ noRecordsMessage }}</li>
+{% endfor %}";s:4:"code";N;s:11:"builderList";a:8:{s:10:"modelClass";s:37:"John\Priceservice\Models\PriceService";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

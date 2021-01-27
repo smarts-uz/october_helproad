@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table john_reviews_list'
+    - builder_table_create_john_reviews_list.php

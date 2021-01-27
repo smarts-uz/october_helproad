@@ -1,0 +1,11 @@
+plugin:
+    name: 'john.priceservice::lang.plugin.name'
+    description: 'john.priceservice::lang.plugin.description'
+    author: john
+    icon: oc-icon-automobile
+    homepage: ''
+navigation:
+    ЗкшсуЫукмшсу:
+        label: ЦенаУслуги
+        url: john/priceservice/priceservice
+        icon: icon-automobile

@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="mt-6 mb-4 font-extrabold text-2xl">
+        <h2>Оставьте заявку</h2>
+        <p class="pb-4">Можем предложить специальные условия именно для вас!</p>
+    </div>
+
+    <div class="card-content author">
+        <form name="form-subscribe-andradedev" class="flex lg:full  flex-wrap justify-evenly items-center" id="form-subscribe-andradedev" data-request="{{ __SELF__ }}::onAddSubscriber" data-request-update="'{{__SELF__}}::alert': '#result'">
+            <input type="text" class="bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4" name="name" placeholder="* Ваше имя" required>
+            <input type="text" class="bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4" name="tel" placeholder="* Ваш телефон" required>
+            <input type="email" class="bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4" name="email" placeholder="* Email" required>
+            <input type="hidden" name="latitude" id="latitude">
+            <input type="hidden" name="longitude" id="longitude">
+        </form>
+    </div>
+
+    <div class="card-action">
+        <button class="w-9/12 sm:w-full bg-blue-700 text-white hover:bg-blue-900 p-2 lg:mt-5 px-6 outline-none" form="form-subscribe-andradedev">Узнать стоимость</button>
+    </div>
+    
+    <div id="result"></div>
+</div>

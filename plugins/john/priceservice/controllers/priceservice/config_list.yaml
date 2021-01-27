@@ -1,0 +1,12 @@
+list: $/john/priceservice/models/priceservice/columns.yaml
+modelClass: John\Priceservice\Models\PriceService
+title: PriceService
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'john/priceservice/priceservice/update/:id'

@@ -1,0 +1,11 @@
+1611734497a:1:{s:23:"formsubscribe/alert.htm";a:5:{s:8:"fileName";s:23:"formsubscribe/alert.htm";s:7:"content";s:241:"{% if result %}
+ <div class="alert alert-primary alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+  {{result}}
+</div>
+ {% endif %}";s:5:"mtime";i:1611720161;s:6:"markup";s:241:"{% if result %}
+ <div class="alert alert-primary alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+  {{result}}
+</div>
+ {% endif %}";s:4:"code";N;}}

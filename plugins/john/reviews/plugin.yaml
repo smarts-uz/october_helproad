@@ -1,0 +1,11 @@
+plugin:
+    name: 'john.reviews::lang.plugin.name'
+    description: 'john.reviews::lang.plugin.description'
+    author: john
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    Reviews:
+        label: Reviews
+        url: john/reviews/reviews
+        icon: icon-life-ring

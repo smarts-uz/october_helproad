@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: '#'
+        type: number
+        searchable: true
+        sortable: true
+    title:
+        label: Услуги
+        type: text
+        searchable: true
+    price:
+        label: Цена
+        type: number
+        searchable: false
+        sortable: true

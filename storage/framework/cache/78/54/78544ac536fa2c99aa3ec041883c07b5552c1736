@@ -1,0 +1,27 @@
+1611733692a:1:{s:17:"prices/price2.htm";a:6:{s:8:"fileName";s:17:"prices/price2.htm";s:7:"content";s:785:"[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "vskrytie-kapota"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "contact"
+postPage = "contact"
+==
+
+<h1>Вскрытие капота</h1>
+{% set posts = blogPosts.posts %}
+    {% for post in posts %}
+    <div style="justify-content: center;" class="flex flex-wrap  border-2 bg-white py-4 px-2 lg:px-10 justify-evenly text-center items-center my-6 ">
+        <p class="sm:w-1/3 w-7/12 ">{{ post.title }}</p>
+        <p class='font-extrabold sm:w-1/3 w-7/12'>от {{ post.excerpt }} руб.</p>
+        <p onclick="orderFormBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+    </div>
+{% endfor %}";s:5:"mtime";i:1611687872;s:6:"markup";s:567:"<h1>Вскрытие капота</h1>
+{% set posts = blogPosts.posts %}
+    {% for post in posts %}
+    <div style="justify-content: center;" class="flex flex-wrap  border-2 bg-white py-4 px-2 lg:px-10 justify-evenly text-center items-center my-6 ">
+        <p class="sm:w-1/3 w-7/12 ">{{ post.title }}</p>
+        <p class='font-extrabold sm:w-1/3 w-7/12'>от {{ post.excerpt }} руб.</p>
+        <p onclick="orderFormBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+    </div>
+{% endfor %}";s:4:"code";N;s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:15:"vskrytie-kapota";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:7:"contact";s:8:"postPage";s:7:"contact";}}}

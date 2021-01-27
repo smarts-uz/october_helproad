@@ -1,0 +1,10 @@
+name: PriceService
+form: $/john/priceservice/models/priceservice/fields.yaml
+modelClass: John\Priceservice\Models\PriceService
+defaultRedirect: john/priceservice/priceservice
+create:
+    redirect: 'john/priceservice/priceservice/update/:id'
+    redirectClose: john/priceservice/priceservice
+update:
+    redirect: john/priceservice/priceservice
+    redirectClose: john/priceservice/priceservice

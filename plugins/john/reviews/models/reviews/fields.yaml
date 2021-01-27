@@ -1,0 +1,15 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    avatar:
+        label: Avatar
+        mode: image
+        span: auto
+        type: mediafinder
+    text:
+        label: Text
+        size: ''
+        span: full
+        type: richeditor

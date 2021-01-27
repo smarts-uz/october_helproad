@@ -1,0 +1,10 @@
+name: Reviews
+form: $/john/reviews/models/reviews/fields.yaml
+modelClass: John\Reviews\Models\Reviews
+defaultRedirect: john/reviews/reviews
+create:
+    redirect: 'john/reviews/reviews/update/:id'
+    redirectClose: john/reviews/reviews
+update:
+    redirect: john/reviews/reviews
+    redirectClose: john/reviews/reviews

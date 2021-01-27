@@ -1,0 +1,23 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table john_priceservice_priceservice'
+    - builder_table_create_john_priceservice_priceservice.php
+1.0.3:
+    - 'Drop table john_priceservice_list'
+    - builder_table_delete_john_priceservice_list.php
+1.0.4:
+    - 'Created table john_priceservice_list'
+    - builder_table_create_john_priceservice_list.php
+1.0.5:
+    - 'Updated table john_priceservice_list'
+    - builder_table_update_john_priceservice_list.php
+1.0.6:
+    - 'Updated table john_priceservice_list'
+    - builder_table_update_john_priceservice_list_2.php
+1.0.7:
+    - 'Updated table john_priceservice_list'
+    - builder_table_update_john_priceservice_list_3.php
+1.0.8:
+    - 'Updated table john_priceservice_list'
+    - builder_table_update_john_priceservice_list_4.php
