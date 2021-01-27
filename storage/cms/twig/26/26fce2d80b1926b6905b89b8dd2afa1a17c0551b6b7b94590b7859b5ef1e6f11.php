@@ -29,8 +29,8 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("component" => 51, "partial" => 253);
-        $filters = array("page" => 75);
+        $tags = array("component" => 22, "partial" => 235);
+        $filters = array("page" => 57);
         $functions = array();
 
         try {
@@ -73,33 +73,20 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
              bg-white  rounded-lg shadow-md lg:shadow-lg\">
              <i onclick=\"closeNav()\" style=\" font-size: 24px;\" class=\"fas fa-times cursor-pointer \"></i>
              <!-- Card Title -->
-             <h2 class=\"text-center font-semibold text-3xl lg:text-4xl text-gray-800\">
+             <div class=\"flex-col text-xs md:text-base  mt-2\">
+                <a class=\"hover:text-blue-500\" href=\"tel:+79067031111\">+7 (906)703-11-11</a>
+            </div>
+            <hr class=\"border-b-1 mb-1 border-blue-700 w-48 mt-1\">
+             <h2 class=\"text-center font-semibold text-3xl lg:text-4xl text-gray-800\">  
                  Заказать звонок
              </h2>
-             <form class=\"mt-10\" method=\"POST\">
-                 <!-- Name Input -->
-                 <input  type=\"text\" placeholder=\"Ваше имя\"
-                     class=\"block w-full py-3 px-1 mt-2 
-                     text-gray-800 appearance-none 
-                     bg-gray-200 pl-6
-                     focus:text-gray-500 focus:outline-none focus:border-gray-200\"
-                     required />
-                 <!-- Number Input -->
-                 <input  type=\"tel\" placeholder=\"Ваш телефон*\"
-                     class=\"block w-full py-3 px-1 mt-6 mb-4
-                     text-gray-800 appearance-none 
-                     bg-gray-200 pl-6
-                     focus:text-gray-500 focus:outline-none focus:border-gray-200\"
-                     required />
-                 <!-- Submit Buttton -->
-                 <button type=\"submit\"
-                     class=\"w-full py-3 mt-10 bg-blue-600 rounded-sm
-                     font-medium text-white uppercase
-                     focus:outline-none hover:bg-gray-700 hover:shadow-none\">
-                     Отправить
-                 </button>
-             </form>
-         </div>
+                ";
+        // line 22
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("formSubscribe"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 23
+        echo "         </div>
      </div>
  </div>
      <div>
@@ -110,7 +97,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                  <div class='hidden lg:flex w-96'>
                  <i class=\"fas fa-map-marker-alt pr-2\"></i>
                  ";
-        // line 51
+        // line 33
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/head1.htm"        ;
         $context['__cms_component_params']['fixture'] = "p"        ;
@@ -118,12 +105,12 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 52
+        // line 34
         echo "             </div>
              <div class='flex hidden lg:flex w-96'>
                  <i class=\"fas fa-clock pr-2\"></i>
                  ";
-        // line 55
+        // line 37
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/head2.htm"        ;
         $context['__cms_component_params']['fixture'] = "p"        ;
@@ -131,14 +118,14 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 56
+        // line 38
         echo "             </div>
              <div class='flex w-96'>
                  <i class=\"fas fa-phone-alt pr-2\"></i>
                  <div class=\"flex-col text-xs md:text-base\">
                  <!-- <a class=\"hover:text-blue-500\" href=\"tel:+79067031111\">+7 (906)703-11-11</a> -->
                  ";
-        // line 61
+        // line 43
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/head3.htm"        ;
         $context['__cms_component_params']['fixture'] = "a"        ;
@@ -146,7 +133,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = "hover:text-blue-500"        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 62
+        // line 44
         echo "                 </div>
              </div>
          </div>
@@ -161,8 +148,8 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                          <ul class=\" flex flex-wrap items-center justify-evenly\">
                             <li class=\" relative flex m-2 w-1/5\">
                                 <a href=\"";
-        // line 75
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("service1");
+        // line 57
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/avtohelp.png\" alt=\"\" class=\"w-10\">
@@ -170,7 +157,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
                                     <a href=\"";
-        // line 81
+        // line 63
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("service1");
         echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                      <i class=\"mr-2\">
@@ -179,7 +166,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                             </li>
                              <li class=\" relative flex m-2 w-1/5\">
                                 <a href=\"";
-        // line 87
+        // line 69
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("service2");
         echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
@@ -188,7 +175,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
                                 <a href=\"";
-        // line 93
+        // line 75
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("service3");
         echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
@@ -197,7 +184,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
                                     <a href=\"";
-        // line 99
+        // line 81
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("service4");
         echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
@@ -206,7 +193,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
                                 <a href=\"";
-        // line 105
+        // line 87
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("service5");
         echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
@@ -215,7 +202,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                             </li>
                             <li class=\" relative flex m-2 w-1/5 avto\">
                                 <a href=\"";
-        // line 111
+        // line 93
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("service6");
         echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
@@ -224,80 +211,104 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
                                 <a href=\"";
-        // line 117
+        // line 99
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("service7");
         echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/car-mechanic-with-departure.png \" alt=\"\" class=\"w-10\">
                                     </i>Автомеханик с выездом</a>
                             </li>
-                            <!-- <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                            <li class=\" relative flex m-2 w-1/5\">
+                                <a href=\"";
+        // line 105
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("service8");
+        echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/menu-5.svg\" alt=\"\" class=\"w-10\">
                                     </i>Вытащить машину</a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5 mr-15\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"";
+        // line 111
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("service9");
+        echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\" https://auto-help-spb.ru/images/menu-10.svg\" alt alt=\"\" class=\"w-10\">
                                     </i>Ремонт, замена и <br> подкачка колёс</a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"";
+        // line 117
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("service10");
+        echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/vehicle-diagnostics.png\"  alt=\"\" class=\"w-10\">
                                      </i>Диагностика <br> автомобиля</a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"";
+        // line 123
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("service11");
+        echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                         <i class=\"mr-2\">
                                             <img src=\"https://auto-help-spb.ru/images/alarm-repair-and-deactivation.png \" alt=\"\" class=\"w-10\">
                                         </i>Ремонт и отключение <br> сигнализации</a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"";
+        // line 129
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("service12");
+        echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/menu-2.svg\" alt=\"\" class=\"w-10\">
                                     </i>Подвоз топлива
                                 </a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"";
+        // line 136
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("service13");
+        echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/engine-start.png\" alt=\"\" class=\"w-10\">
                                     </i>Запуск двигателя
                                 </a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"";
+        // line 143
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("service14");
+        echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/menu-7.svg \" alt=\"\" class=\"w-10\">
                                     </i>Буксировка автомобиля
                                 </a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"";
+        // line 150
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("service15");
+        echo "\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/menu-8.svg\" alt=\"\" class=\"w-10\">
                                     </i>Разблокировка АКПП
                                 </a>
-                            </li> -->
+                            </li>
                          </ul>
                          </div>
             
                      </li>
                              </li> 
                  <li class=\"hidden lg:flex hover:text-orange-600 w-1/6 ml-10\"><a href=\"";
-        // line 179
+        // line 161
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("prices");
         echo "\"> ЦЕНЫ </a></li>
                  <li class=\"hidden lg:flex hover:text-orange-600 w-1/6\"><a href=\"";
-        // line 180
+        // line 162
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("reviews");
         echo "\"> ОТЗЫВЫ </a></li>
                  <li class=\"hidden lg:flex hover:text-orange-600 w-1/6\"><a href=\"";
-        // line 181
+        // line 163
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("contact");
         echo "\"> КОНТАКТЫ </a></li>
                  <li onclick=\"orderCallBtn()\" class=\"border-2 text-center border-white w-6/12 sm:w-1/3 lg:w-1/6 py-3 hover:bg-blue-700 hover:border-blue-700
@@ -307,7 +318,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
  </header>
  <div class=\"header font-bold lg:text-5xl md:text-3xl text-xl mt-16 mx-6 md:mx-24\">
  ";
-        // line 188
+        // line 170
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/title.htm"        ;
         $context['__cms_component_params']['fixture'] = "h1"        ;
@@ -315,7 +326,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = "text-white"        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 189
+        // line 171
         echo " <h1 class=\"text-white\"> ОТ ";
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/price.htm"        ;
@@ -328,7 +339,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
  </div>
  <ul class=\"text-sm md:text-lg lg:xl flex-col items-center justify-evenly text-white mt-10 mx-6 md:mx-24\">
      <li><i class=\"fas fa-angle-double-right pr-4 text-orange-600 mt-4\"></i>";
-        // line 192
+        // line 174
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/list1.htm"        ;
         $context['__cms_component_params']['tools'] = "bold,italic"        ;
@@ -337,7 +348,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         unset($context['__cms_component_params']);
         echo "</li>
      <li><i class=\"fas fa-angle-double-right pr-4 text-orange-600 mt-4\"></i>";
-        // line 193
+        // line 175
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/list2.htm"        ;
         $context['__cms_component_params']['tools'] = "bold,italic"        ;
@@ -346,7 +357,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         unset($context['__cms_component_params']);
         echo "</li>
      <li><i class=\"fas fa-angle-double-right pr-4 text-orange-600 mt-4\"></i>";
-        // line 194
+        // line 176
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/list3.htm"        ;
         $context['__cms_component_params']['tools'] = "bold,italic"        ;
@@ -355,7 +366,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         unset($context['__cms_component_params']);
         echo "</li>
      <li><i class=\"fas fa-angle-double-right pr-4 text-orange-600 mt-4\"></i>";
-        // line 195
+        // line 177
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/list4.htm"        ;
         $context['__cms_component_params']['tools'] = "bold,italic"        ;
@@ -364,7 +375,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         unset($context['__cms_component_params']);
         echo "</li>
      <li><i class=\"fas fa-angle-double-right pr-4 text-orange-600 mt-4\"></i>";
-        // line 196
+        // line 178
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/list5.htm"        ;
         $context['__cms_component_params']['tools'] = "bold,italic"        ;
@@ -429,11 +440,11 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
  <div class=\"h-full w-full bg-white\">
 <div class=\"m-auto flex flex-wrap justify-center text-center items-center\">
     ";
-        // line 253
+        // line 235
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("home/aboutus"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 254
+        // line 236
         echo " </div>
  <div class=\"pb-16 h-full flex-col bg-blue-700 justify-between items-center mt-10\">
      <div>
@@ -467,7 +478,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
     <div class=\"flex items-center flex-wrap\">
         <div class=\"md:w-1/2 w-full\">
      ";
-        // line 286
+        // line 268
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/text1.htm"        ;
         $context['__cms_component_params']['fixture'] = "p"        ;
@@ -475,10 +486,10 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 287
+        // line 269
         echo "     <br>
      ";
-        // line 288
+        // line 270
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/text2.htm"        ;
         $context['__cms_component_params']['fixture'] = "p"        ;
@@ -486,7 +497,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 289
+        // line 271
         echo "     </div>
      <img class=\"mt-6 md:w-1/2 w-full\" src=\"https://auto-help-spb.ru/assets/cache_image/images/one/index_585x361_721.jpg\" alt=\"\">   
  </div>
@@ -546,11 +557,11 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
      <div class=\" flex-wrap lg:w-3/5 w-full flex-col justify-center items-center mx-4 lg:mx-0 font-thin\">
          
         ";
-        // line 347
+        // line 329
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("home/price"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 348
+        // line 330
         echo "     </div>
      
          <div class=\" flex-col bg-blue-600 p-4 text-white py-10 mx-4 lg:mx-0  lg:w-48 w-full\">
@@ -576,11 +587,11 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
      <h1 class=\"py-8 text-4xl text-center text-white font-extrabold\">Как мы работаем</h1>
      <div class=\"flex flex-wrap justify-evenly\">
         ";
-        // line 372
+        // line 354
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("home/work"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 373
+        // line 355
         echo "     </div>
  </div>
 </div>
@@ -588,7 +599,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
  <div class=\"flex-col flex-wrap mx-4 md:mx-16 lg:mx-24\">
      <h1 class=\"title text-center font-extrabold text-xl md:text-2xl lg:text-4xl py-6\">
         ";
-        // line 379
+        // line 361
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/title2.htm"        ;
         $context['__cms_component_params']['fixture'] = "h1"        ;
@@ -596,12 +607,12 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = "title text-center font-extrabold text-xl md:text-2xl lg:text-4xl py-6"        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 380
+        // line 362
         echo "     </h1>
      <div class=\"flex-row flex-wrap \">
          <div class=\"flex-col font-thin px-2  w-full\">
             ";
-        // line 383
+        // line 365
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/text4.htm"        ;
         $context['__cms_component_params']['fixture'] = "p"        ;
@@ -609,12 +620,12 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 384
+        // line 366
         echo "         </div>
          <br>
          <div class=\"flex-col font-thin px-2  w-full\">
             ";
-        // line 387
+        // line 369
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/text5.htm"        ;
         $context['__cms_component_params']['fixture'] = "p"        ;
@@ -622,7 +633,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 388
+        // line 370
         echo "         </p>
          </div>
      </div>
@@ -635,11 +646,11 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
      <div class=\"flex text-center justify-center items-center flex-wrap\">
         <div class=\"owl-carousel owl-theme\">
             ";
-        // line 399
+        // line 381
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("home/service"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 400
+        // line 382
         echo "        </div>
      
    
@@ -647,33 +658,11 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
  </div>
  </div>
 </div>
-<div class=\"flex items-center justify-center\">
- <img src=\"https://auto-help-spb.ru/images/form-bg.jpg\" class=\"absolute w-full\" alt=\"\">
- <div style=\"z-index: 3;\" class=\"bg-white  lg:my-10  lg:w-11/12 text-center py-8\">
-     <!-- <h1 class=\"mt-6 mb-4 font-extrabold text-2xl\">Оставьте заявку</h1>
-     <p class=\"pb-4\">Можем предложить специальные условия именно для вас!</p> -->
-     <!-- <form action=\"\" class=\"flex lg:full  flex-wrap justify-evenly items-center\">
-         <input class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" type=\"text\" placeholder=\"Ваше имя\">
-         <input class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" type=\"tel\" placeholder=\"Ваш телефон*\">
-         <div class=\"flex flex-wrap items-center justify-center lg:w-1/4\">
-         <input class=\"w-9/12 sm:w-full bg-blue-700 text-white hover:bg-blue-900 p-2 lg:mt-5 px-6 outline-none\" type=\"submit\" value=\"Узнать стоимость\">
-         <input class=\"hidden\" type=\"file\" id=\"file\">
-         <label class=\"w-9/12 sm:w-full cursor-pointer mt-4 lg:mt-0\" for=\"file\"><i class=\"fas fa-paperclip mr-2\"></i>Прикрепить фото</label>
-         </div>
-     </form> -->
-     ";
-        // line 421
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("formSubscribe"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
-        // line 422
-        echo " </div>
-</div>
 <!-- Служба техпомощи компании section start -->
 <div class=\" bg-gray-100\">
  <div class=\"flex-col mx-4 md:mx-8 lg:mx-12 py-8 \">
         ";
-        // line 427
+        // line 392
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/title3.htm"        ;
         $context['__cms_component_params']['fixture'] = "h1"        ;
@@ -681,11 +670,11 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = "text-center font-extrabold text-lg sm:text-2xl lg:text-4xl py-12"        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 428
+        // line 393
         echo "     <div class=\"flex mx-4 flex-wrap justify-center\">
          <div class=\"flex  flex-wrap font-thin text-sm md:text-lg\">
             ";
-        // line 430
+        // line 395
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/text3.htm"        ;
         $context['__cms_component_params']['fixture'] = "p"        ;
@@ -693,10 +682,10 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 431
+        // line 396
         echo "         <br>
          <!-- ";
-        // line 432
+        // line 397
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/list6.htm"        ;
         $context['__cms_component_params']['fixture'] = "ul"        ;
@@ -707,7 +696,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         echo " -->
          <ul class=\"pl-4\">
              ";
-        // line 434
+        // line 399
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/list6.htm"        ;
         $context['__cms_component_params']['fixture'] = ""        ;
@@ -715,12 +704,12 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = "list-disc"        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 435
+        // line 400
         echo "
          </ul>
          <br>
          ";
-        // line 438
+        // line 403
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/text6.htm"        ;
         $context['__cms_component_params']['fixture'] = "p"        ;
@@ -728,7 +717,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 439
+        // line 404
         echo "                ";
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/title4.htm"        ;
@@ -737,7 +726,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = "text-center font-extrabold text-lg sm:text-2xl lg:text-4xl py-12 m-auto"        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 440
+        // line 405
         echo "                ";
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/text7.htm"        ;
@@ -746,7 +735,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 441
+        // line 406
         echo "                ";
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/title4.htm"        ;
@@ -755,7 +744,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = "text-center font-extrabold text-lg sm:text-2xl lg:text-4xl py-12 m-auto"        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 442
+        // line 407
         echo "                ";
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['file'] = "home/text8.htm"        ;
@@ -764,7 +753,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
         $context['__cms_component_params']['class'] = ""        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 443
+        // line 408
         echo "
          </div>
      </div>
@@ -788,33 +777,12 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
   </div>
 </div>
 <!-- Наши работы section end -->
-<div class=\"flex-col bg-gray-300\">
+<!-- <div class=\"flex-col bg-gray-300\">
  <h1 class=\"text-center font-extrabold text-4xl  py-12\">Связаться с нами</h1>
  <div class=\"flex justify-evenly items-center flex-wrap mx-4 md:mx-12 lg:mx-24 py-12\">
-     <div class=\"mapouter flex justify-center items-center\"><div style=\"width: 90vw;\" class=\"gmap_canvas\"><iframe width=\"500\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=moscow&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe><a href=\"https://putlocker-is.org\"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}</style><a href=\"https://www.embedgooglemap.net\">adding google maps to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div></div>
-     <div class=\"w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10\">
-         <h1 class=\"font-extrabold text-2xl\">Оставьте заявку</h1>
-         <p>Можем предложить специальные условия именно для вас!</p>
-         <!-- <form action=\"\" class=\"flex-col\">
-             <input class=\"bg-gray-300 w-96 md:w-1/2 mt-4 p-2\" type=\"text\" placeholder=\"Ваше имя\" required />
-             <input class=\"bg-gray-300 w-96 md:w-1/2 mt-4 p-2\" type=\"tel\" placeholder=\"Ваш телефон*\" required />
-             <textarea class=\"bg-gray-300 w-96 md:w-1/2 mt-4 p-2\" cols=\"30\" rows=\"10\" placeholder=\"Комментарий\"></textarea>
-             <div class=\"flex text-center justify-center items-center cursor-pointer\">
-             <input class=\"hidden\" type=\"file\" id=\"upload\">
-             <label class=\"cursor-pointer\" for=\"upload\"><i class=\"fas fa-paperclip mr-2 cursor-pointer\"></i>Прикрепить фото</label>
-             </div>
-             <input class=\"cursor-pointer w-96 md:w-1/2 bg-blue-700 text-white mt-2 hover:bg-blue-900 p-2 lg:mt-5 px-6 outline-none\" type=\"submit\" value=\"Узнать стоимость\">  
-             </div>
-         </form> -->
-         ";
-        // line 484
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("commentsPost"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
-        // line 485
-        echo "     </div>
+    <div class=\"mapouter\"><div class=\"gmap_canvas\"><iframe width=\"800\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=moscow&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe><a href=\"https://www.whatismyip-address.com\"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:800px;}</style><a href=\"https://www.embedgooglemap.net\">full width google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:800px;}</style></div></div>
  </div>
-</div>";
+</div> -->";
     }
 
     public function getTemplateName()
@@ -829,7 +797,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
 
     public function getDebugInfo()
     {
-        return array (  815 => 485,  811 => 484,  768 => 443,  759 => 442,  750 => 441,  741 => 440,  732 => 439,  724 => 438,  719 => 435,  711 => 434,  700 => 432,  697 => 431,  689 => 430,  685 => 428,  677 => 427,  670 => 422,  666 => 421,  643 => 400,  639 => 399,  626 => 388,  618 => 387,  613 => 384,  605 => 383,  600 => 380,  592 => 379,  584 => 373,  580 => 372,  554 => 348,  550 => 347,  490 => 289,  482 => 288,  479 => 287,  471 => 286,  437 => 254,  433 => 253,  368 => 196,  359 => 195,  350 => 194,  341 => 193,  332 => 192,  319 => 189,  311 => 188,  301 => 181,  297 => 180,  293 => 179,  228 => 117,  219 => 111,  210 => 105,  201 => 99,  192 => 93,  183 => 87,  174 => 81,  165 => 75,  150 => 62,  142 => 61,  135 => 56,  127 => 55,  122 => 52,  114 => 51,  62 => 1,);
+        return array (  757 => 408,  748 => 407,  739 => 406,  730 => 405,  721 => 404,  713 => 403,  708 => 400,  700 => 399,  689 => 397,  686 => 396,  678 => 395,  674 => 393,  666 => 392,  654 => 382,  650 => 381,  637 => 370,  629 => 369,  624 => 366,  616 => 365,  611 => 362,  603 => 361,  595 => 355,  591 => 354,  565 => 330,  561 => 329,  501 => 271,  493 => 270,  490 => 269,  482 => 268,  448 => 236,  444 => 235,  379 => 178,  370 => 177,  361 => 176,  352 => 175,  343 => 174,  330 => 171,  322 => 170,  312 => 163,  308 => 162,  304 => 161,  290 => 150,  280 => 143,  270 => 136,  260 => 129,  251 => 123,  242 => 117,  233 => 111,  224 => 105,  215 => 99,  206 => 93,  197 => 87,  188 => 81,  179 => 75,  170 => 69,  161 => 63,  152 => 57,  137 => 44,  129 => 43,  122 => 38,  114 => 37,  109 => 34,  101 => 33,  89 => 23,  85 => 22,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -848,32 +816,14 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
              bg-white  rounded-lg shadow-md lg:shadow-lg\">
              <i onclick=\"closeNav()\" style=\" font-size: 24px;\" class=\"fas fa-times cursor-pointer \"></i>
              <!-- Card Title -->
-             <h2 class=\"text-center font-semibold text-3xl lg:text-4xl text-gray-800\">
+             <div class=\"flex-col text-xs md:text-base  mt-2\">
+                <a class=\"hover:text-blue-500\" href=\"tel:+79067031111\">+7 (906)703-11-11</a>
+            </div>
+            <hr class=\"border-b-1 mb-1 border-blue-700 w-48 mt-1\">
+             <h2 class=\"text-center font-semibold text-3xl lg:text-4xl text-gray-800\">  
                  Заказать звонок
              </h2>
-             <form class=\"mt-10\" method=\"POST\">
-                 <!-- Name Input -->
-                 <input  type=\"text\" placeholder=\"Ваше имя\"
-                     class=\"block w-full py-3 px-1 mt-2 
-                     text-gray-800 appearance-none 
-                     bg-gray-200 pl-6
-                     focus:text-gray-500 focus:outline-none focus:border-gray-200\"
-                     required />
-                 <!-- Number Input -->
-                 <input  type=\"tel\" placeholder=\"Ваш телефон*\"
-                     class=\"block w-full py-3 px-1 mt-6 mb-4
-                     text-gray-800 appearance-none 
-                     bg-gray-200 pl-6
-                     focus:text-gray-500 focus:outline-none focus:border-gray-200\"
-                     required />
-                 <!-- Submit Buttton -->
-                 <button type=\"submit\"
-                     class=\"w-full py-3 mt-10 bg-blue-600 rounded-sm
-                     font-medium text-white uppercase
-                     focus:outline-none hover:bg-gray-700 hover:shadow-none\">
-                     Отправить
-                 </button>
-             </form>
+                {% component 'formSubscribe' %}
          </div>
      </div>
  </div>
@@ -908,7 +858,7 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                      <div style=\"width: 90vw; top: 70px;\" class=\"nav-submenu z-10  p-6 bg-gray-100 hidden absolute left-0\">
                          <ul class=\" flex flex-wrap items-center justify-evenly\">
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"{{ 'service1'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"{{ 'home'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/avtohelp.png\" alt=\"\" class=\"w-10\">
                                     </i>Автомобильная помощь</a>
@@ -955,58 +905,58 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
                                         <img src=\"https://auto-help-spb.ru/images/car-mechanic-with-departure.png \" alt=\"\" class=\"w-10\">
                                     </i>Автомеханик с выездом</a>
                             </li>
-                            <!-- <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                            <li class=\" relative flex m-2 w-1/5\">
+                                <a href=\"{{ 'service8'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/menu-5.svg\" alt=\"\" class=\"w-10\">
                                     </i>Вытащить машину</a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5 mr-15\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"{{ 'service9'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\" https://auto-help-spb.ru/images/menu-10.svg\" alt alt=\"\" class=\"w-10\">
                                     </i>Ремонт, замена и <br> подкачка колёс</a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"{{ 'service10'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/vehicle-diagnostics.png\"  alt=\"\" class=\"w-10\">
                                      </i>Диагностика <br> автомобиля</a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"{{ 'service11'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
                                         <i class=\"mr-2\">
                                             <img src=\"https://auto-help-spb.ru/images/alarm-repair-and-deactivation.png \" alt=\"\" class=\"w-10\">
                                         </i>Ремонт и отключение <br> сигнализации</a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"{{ 'service12'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/menu-2.svg\" alt=\"\" class=\"w-10\">
                                     </i>Подвоз топлива
                                 </a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"{{ 'service13'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/engine-start.png\" alt=\"\" class=\"w-10\">
                                     </i>Запуск двигателя
                                 </a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"{{ 'service14'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/menu-7.svg \" alt=\"\" class=\"w-10\">
                                     </i>Буксировка автомобиля
                                 </a>
                             </li>
                             <li class=\" relative flex m-2 w-1/5\">
-                                <a href=\"#\" class=\" flex items-center text-black hover:text-orange-500\">
+                                <a href=\"{{ 'service15'|page }}\" class=\" flex items-center text-black hover:text-orange-500\">
                                     <i class=\"mr-2\">
                                         <img src=\"https://auto-help-spb.ru/images/menu-8.svg\" alt=\"\" class=\"w-10\">
                                     </i>Разблокировка АКПП
                                 </a>
-                            </li> -->
+                            </li>
                          </ul>
                          </div>
             
@@ -1240,23 +1190,6 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
  </div>
  </div>
 </div>
-<div class=\"flex items-center justify-center\">
- <img src=\"https://auto-help-spb.ru/images/form-bg.jpg\" class=\"absolute w-full\" alt=\"\">
- <div style=\"z-index: 3;\" class=\"bg-white  lg:my-10  lg:w-11/12 text-center py-8\">
-     <!-- <h1 class=\"mt-6 mb-4 font-extrabold text-2xl\">Оставьте заявку</h1>
-     <p class=\"pb-4\">Можем предложить специальные условия именно для вас!</p> -->
-     <!-- <form action=\"\" class=\"flex lg:full  flex-wrap justify-evenly items-center\">
-         <input class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" type=\"text\" placeholder=\"Ваше имя\">
-         <input class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" type=\"tel\" placeholder=\"Ваш телефон*\">
-         <div class=\"flex flex-wrap items-center justify-center lg:w-1/4\">
-         <input class=\"w-9/12 sm:w-full bg-blue-700 text-white hover:bg-blue-900 p-2 lg:mt-5 px-6 outline-none\" type=\"submit\" value=\"Узнать стоимость\">
-         <input class=\"hidden\" type=\"file\" id=\"file\">
-         <label class=\"w-9/12 sm:w-full cursor-pointer mt-4 lg:mt-0\" for=\"file\"><i class=\"fas fa-paperclip mr-2\"></i>Прикрепить фото</label>
-         </div>
-     </form> -->
-     {% component 'formSubscribe' %}
- </div>
-</div>
 <!-- Служба техпомощи компании section start -->
 <div class=\" bg-gray-100\">
  <div class=\"flex-col mx-4 md:mx-8 lg:mx-12 py-8 \">
@@ -1299,27 +1232,11 @@ class __TwigTemplate_b619619f43acc9e530a220d780b2704acde1203f1aa0c1f36aa20de0271
   </div>
 </div>
 <!-- Наши работы section end -->
-<div class=\"flex-col bg-gray-300\">
+<!-- <div class=\"flex-col bg-gray-300\">
  <h1 class=\"text-center font-extrabold text-4xl  py-12\">Связаться с нами</h1>
  <div class=\"flex justify-evenly items-center flex-wrap mx-4 md:mx-12 lg:mx-24 py-12\">
-     <div class=\"mapouter flex justify-center items-center\"><div style=\"width: 90vw;\" class=\"gmap_canvas\"><iframe width=\"500\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=moscow&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe><a href=\"https://putlocker-is.org\"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}</style><a href=\"https://www.embedgooglemap.net\">adding google maps to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div></div>
-     <div class=\"w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10\">
-         <h1 class=\"font-extrabold text-2xl\">Оставьте заявку</h1>
-         <p>Можем предложить специальные условия именно для вас!</p>
-         <!-- <form action=\"\" class=\"flex-col\">
-             <input class=\"bg-gray-300 w-96 md:w-1/2 mt-4 p-2\" type=\"text\" placeholder=\"Ваше имя\" required />
-             <input class=\"bg-gray-300 w-96 md:w-1/2 mt-4 p-2\" type=\"tel\" placeholder=\"Ваш телефон*\" required />
-             <textarea class=\"bg-gray-300 w-96 md:w-1/2 mt-4 p-2\" cols=\"30\" rows=\"10\" placeholder=\"Комментарий\"></textarea>
-             <div class=\"flex text-center justify-center items-center cursor-pointer\">
-             <input class=\"hidden\" type=\"file\" id=\"upload\">
-             <label class=\"cursor-pointer\" for=\"upload\"><i class=\"fas fa-paperclip mr-2 cursor-pointer\"></i>Прикрепить фото</label>
-             </div>
-             <input class=\"cursor-pointer w-96 md:w-1/2 bg-blue-700 text-white mt-2 hover:bg-blue-900 p-2 lg:mt-5 px-6 outline-none\" type=\"submit\" value=\"Узнать стоимость\">  
-             </div>
-         </form> -->
-         {% component 'commentsPost' %}
-     </div>
+    <div class=\"mapouter\"><div class=\"gmap_canvas\"><iframe width=\"800\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=moscow&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe><a href=\"https://www.whatismyip-address.com\"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:800px;}</style><a href=\"https://www.embedgooglemap.net\">full width google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:800px;}</style></div></div>
  </div>
-</div>", "E:\\openserver\\domains\\auto/themes/auto/pages/home.htm", "");
+</div> -->", "E:\\openserver\\domains\\auto/themes/auto/pages/home.htm", "");
     }
 }

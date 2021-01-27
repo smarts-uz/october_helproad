@@ -1,4 +1,4 @@
-1611734463a:1:{s:11:"reviews.htm";a:14:{s:8:"fileName";s:11:"reviews.htm";s:7:"content";s:28925:"title = "Reviews"
+1611758380a:1:{s:11:"reviews.htm";a:13:{s:8:"fileName";s:11:"reviews.htm";s:7:"content";s:28886:"title = "Reviews"
 url = "/reviews"
 layout = "default"
 meta_title = "Reviews"
@@ -15,8 +15,6 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
-
-[commentsPost]
 ==
 <div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
     <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
@@ -310,7 +308,7 @@ pageNumber = "{{ :page }}"
      выполненных работ! Наша команда опытных профессионалов
       поможет в любой ситуации 24/7! Если вы стали нашим клиентом, 
       то му будем рады вашему отзыву о нашей работе!</p>
-<button onclick="reviewBtn()" class="py-4 px-8 bg-blue-600 text-white mt-6">Оставить отзыв</button>
+<!-- <button onclick="reviewBtn()" class="py-4 px-8 bg-blue-600 text-white mt-6">Оставить отзыв</button> -->
 </div>
 
 
@@ -347,10 +345,10 @@ pageNumber = "{{ :page }}"
         <div class="w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10">
             <h1 class="font-extrabold text-2xl">Оставьте заявку</h1>
             <p>Можем предложить специальные условия именно для вас!</p>
-            {% component 'commentsPost' %}
+            
         </div>
     </div>
-</div>";s:5:"mtime";i:1611733170;s:6:"markup";s:28518:"<div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
+</div>";s:5:"mtime";i:1611757761;s:6:"markup";s:28497:"<div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
     <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
     <ul class="text-white mt-6 inline-block items-center cursor-pointer  text-2xl">
       <span class="border-b-2  hover:border-orange-500">  Услуги </span> <span onclick="openSubMenu()" class="plus text-4xl ml-4 hover:text-blue-500">+</span>
@@ -642,7 +640,7 @@ pageNumber = "{{ :page }}"
      выполненных работ! Наша команда опытных профессионалов
       поможет в любой ситуации 24/7! Если вы стали нашим клиентом, 
       то му будем рады вашему отзыву о нашей работе!</p>
-<button onclick="reviewBtn()" class="py-4 px-8 bg-blue-600 text-white mt-6">Оставить отзыв</button>
+<!-- <button onclick="reviewBtn()" class="py-4 px-8 bg-blue-600 text-white mt-6">Оставить отзыв</button> -->
 </div>
 
 
@@ -679,7 +677,7 @@ pageNumber = "{{ :page }}"
         <div class="w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10">
             <h1 class="font-extrabold text-2xl">Оставьте заявку</h1>
             <p>Можем предложить специальные условия именно для вас!</p>
-            {% component 'commentsPost' %}
+            
         </div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:7:"Reviews";s:3:"url";s:8:"/reviews";s:6:"layout";s:7:"default";s:10:"meta_title";s:7:"Reviews";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:11:"builderList";a:8:{s:10:"modelClass";s:27:"John\Reviews\Models\Reviews";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:12:"commentsPost";a:0:{}}}
+</div>";s:4:"code";N;s:5:"title";s:7:"Reviews";s:3:"url";s:8:"/reviews";s:6:"layout";s:7:"default";s:10:"meta_title";s:7:"Reviews";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:11:"builderList";a:8:{s:10:"modelClass";s:27:"John\Reviews\Models\Reviews";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

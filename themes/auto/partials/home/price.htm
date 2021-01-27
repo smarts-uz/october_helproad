@@ -7,6 +7,13 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[formSubscribe]
+urlToUnsubscribe = "unsubscribe"
+urlToProfile = "subscriber-profile"
+geo = "enabled"
+thanksMessage = "Thanks for subscribe!"
+errorMessage = "Thanks for subscribe!"
 ==
 {% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
@@ -20,7 +27,8 @@ pageNumber = "{{ :page }}"
 <div style="justify-content: center;" class="flex flex-wrap  border-2 bg-white py-4 px-2 lg:px-10 justify-evenly text-center items-center my-6 ">
     <p class="sm:w-1/3 w-7/12 ">{{record.title}}</p>
     <p class='font-extrabold sm:w-1/3 w-7/12'>от {{ record.price }} руб.</p>
-    <p onclick="orderFormBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+    <p onclick="orderCallBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+
 </div>
 {% else %}
     <li class="no-data">{{ noRecordsMessage }}</li>

@@ -21,7 +21,7 @@ class Subscriber extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = ['name', 'surname', 'email', 'latitude', 'longitude', 'code'];
+    protected $fillable = ['email', 'name', 'surname', 'country', 'latitude', 'longitude', 'code'];
 
 
 }

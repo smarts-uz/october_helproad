@@ -1,12 +1,10 @@
-1611734463a:1:{s:10:"prices.htm";a:13:{s:8:"fileName";s:10:"prices.htm";s:7:"content";s:24497:"title = "Prices"
+1611758576a:1:{s:10:"prices.htm";a:12:{s:8:"fileName";s:10:"prices.htm";s:7:"content";s:24672:"title = "Prices"
 url = "/prices"
 layout = "default"
 meta_title = "Prices"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
-
-[commentsPost]
 ==
 <div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
     <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
@@ -213,10 +211,15 @@ robot_follow = "follow"
             {% partial 'prices/price1' %}
             {% partial 'prices/price2' %}
             {% partial 'prices/price3' %}
-            {% partial 'prices/price4' %}
+            {% partial 'prices/price5' %}
+            {% partial 'prices/price6' %}
+            {% partial 'prices/price7' %}
+            {% partial 'prices/price8' %}
+            {% partial 'prices/price9' %}
+            {% partial 'prices/price10' %}
         </div>
     
-        <div class=" flex-col bg-blue-600 p-4 text-white py-10 mx-4 lg:mx-0  lg:w-48 w-full">
+        <div class=" flex-col bg-blue-600 p-4 h-full text-white py-10 mx-4 lg:mx-0  lg:w-48 w-full">
             <p>
                 Цена озвученная диспетчером, не увеличится на месте работ.
             </p><br>
@@ -239,10 +242,10 @@ robot_follow = "follow"
     <div class="w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10">
         <h1 class="font-extrabold text-2xl">Оставьте заявку</h1>
         <p>Можем предложить специальные условия именно для вас!</p>
-        {% component 'commentsPost' %}
+        
     </div>
 </div>
-</div>";s:5:"mtime";i:1611733039;s:6:"markup";s:24334:"<div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
+</div>";s:5:"mtime";i:1611748873;s:6:"markup";s:24527:"<div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
     <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
     <ul class="text-white mt-6 inline-block items-center cursor-pointer  text-2xl">
       <span class="border-b-2  hover:border-orange-500">  Услуги </span> <span onclick="openSubMenu()" class="plus text-4xl ml-4 hover:text-blue-500">+</span>
@@ -447,10 +450,15 @@ robot_follow = "follow"
             {% partial 'prices/price1' %}
             {% partial 'prices/price2' %}
             {% partial 'prices/price3' %}
-            {% partial 'prices/price4' %}
+            {% partial 'prices/price5' %}
+            {% partial 'prices/price6' %}
+            {% partial 'prices/price7' %}
+            {% partial 'prices/price8' %}
+            {% partial 'prices/price9' %}
+            {% partial 'prices/price10' %}
         </div>
     
-        <div class=" flex-col bg-blue-600 p-4 text-white py-10 mx-4 lg:mx-0  lg:w-48 w-full">
+        <div class=" flex-col bg-blue-600 p-4 h-full text-white py-10 mx-4 lg:mx-0  lg:w-48 w-full">
             <p>
                 Цена озвученная диспетчером, не увеличится на месте работ.
             </p><br>
@@ -473,7 +481,7 @@ robot_follow = "follow"
     <div class="w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10">
         <h1 class="font-extrabold text-2xl">Оставьте заявку</h1>
         <p>Можем предложить специальные условия именно для вас!</p>
-        {% component 'commentsPost' %}
+        
     </div>
 </div>
-</div>";s:4:"code";N;s:5:"title";s:6:"Prices";s:3:"url";s:7:"/prices";s:6:"layout";s:7:"default";s:10:"meta_title";s:6:"Prices";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:12:"commentsPost";a:0:{}}}
+</div>";s:4:"code";N;s:5:"title";s:6:"Prices";s:3:"url";s:7:"/prices";s:6:"layout";s:7:"default";s:10:"meta_title";s:6:"Prices";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";}}

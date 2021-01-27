@@ -80,7 +80,7 @@ class __TwigTemplate_3cca3e24ce3216f60e2a1f34b02935e9ccfd3c0ae14bbf92ee24c830086
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["record"]) {
             // line 10
-            echo "    <div class=\"item shadow-2xl  lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500\"> <img class='rounded-full' src=\" ";
+            echo "    <div class=\"item shadow-2xl h-full lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500\"> <img class='rounded-full' src=\" ";
             echo $this->extensions['System\Twig\Extension']->mediaFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["record"], "image", [], "any", false, false, true, 10), 10, $this->source));
             echo " \" alt=\"\">
         <p class=\"py-4\">";
@@ -134,7 +134,7 @@ class __TwigTemplate_3cca3e24ce3216f60e2a1f34b02935e9ccfd3c0ae14bbf92ee24c830086
 
 
 {% for record in records %}
-    <div class=\"item shadow-2xl  lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500\"> <img class='rounded-full' src=\" {{ record.image|media }} \" alt=\"\">
+    <div class=\"item shadow-2xl h-full lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500\"> <img class='rounded-full' src=\" {{ record.image|media }} \" alt=\"\">
         <p class=\"py-4\">{{ record.title }}</p>
         <p  class=\" py-4 font-extrabold text-lg\">от {{ record.price }} руб.</p>
         <button onclick=\"orderFormBtn()\" class=\"font-extrabold text-blue-500 border-2 border-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white transition duration-300\">Заказать</button>

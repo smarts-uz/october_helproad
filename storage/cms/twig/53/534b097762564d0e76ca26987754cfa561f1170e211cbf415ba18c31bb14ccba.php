@@ -29,13 +29,13 @@ class __TwigTemplate_3f55e05ba530b8075611d8a49736374cbb87449838f25851fd87aa3c377
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("set" => 299, "for" => 307, "component" => 330);
+        $tags = array("set" => 299, "for" => 307);
         $filters = array("page" => 93, "raw" => 310, "escape" => 312, "date" => 313);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['set', 'for', 'component'],
+                ['set', 'for'],
                 ['page', 'raw', 'escape', 'date'],
                 []
             );
@@ -387,7 +387,7 @@ class __TwigTemplate_3f55e05ba530b8075611d8a49736374cbb87449838f25851fd87aa3c377
      выполненных работ! Наша команда опытных профессионалов
       поможет в любой ситуации 24/7! Если вы стали нашим клиентом, 
       то му будем рады вашему отзыву о нашей работе!</p>
-<button onclick=\"reviewBtn()\" class=\"py-4 px-8 bg-blue-600 text-white mt-6\">Оставить отзыв</button>
+<!-- <button onclick=\"reviewBtn()\" class=\"py-4 px-8 bg-blue-600 text-white mt-6\">Оставить отзыв</button> -->
 </div>
 
 
@@ -458,13 +458,8 @@ class __TwigTemplate_3f55e05ba530b8075611d8a49736374cbb87449838f25851fd87aa3c377
         <div class=\"w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10\">
             <h1 class=\"font-extrabold text-2xl\">Оставьте заявку</h1>
             <p>Можем предложить специальные условия именно для вас!</p>
-            ";
-        // line 330
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("commentsPost"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
-        // line 331
-        echo "        </div>
+            
+        </div>
     </div>
 </div>";
     }
@@ -481,7 +476,7 @@ class __TwigTemplate_3f55e05ba530b8075611d8a49736374cbb87449838f25851fd87aa3c377
 
     public function getDebugInfo()
     {
-        return array (  467 => 331,  463 => 330,  449 => 318,  440 => 316,  432 => 313,  428 => 312,  423 => 310,  419 => 308,  414 => 307,  410 => 305,  408 => 304,  406 => 303,  404 => 302,  402 => 301,  400 => 300,  398 => 299,  322 => 226,  318 => 225,  314 => 224,  249 => 162,  240 => 156,  231 => 150,  222 => 144,  213 => 138,  204 => 132,  195 => 126,  186 => 120,  156 => 93,  62 => 1,);
+        return array (  449 => 318,  440 => 316,  432 => 313,  428 => 312,  423 => 310,  419 => 308,  414 => 307,  410 => 305,  408 => 304,  406 => 303,  404 => 302,  402 => 301,  400 => 300,  398 => 299,  322 => 226,  318 => 225,  314 => 224,  249 => 162,  240 => 156,  231 => 150,  222 => 144,  213 => 138,  204 => 132,  195 => 126,  186 => 120,  156 => 93,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -778,7 +773,7 @@ class __TwigTemplate_3f55e05ba530b8075611d8a49736374cbb87449838f25851fd87aa3c377
      выполненных работ! Наша команда опытных профессионалов
       поможет в любой ситуации 24/7! Если вы стали нашим клиентом, 
       то му будем рады вашему отзыву о нашей работе!</p>
-<button onclick=\"reviewBtn()\" class=\"py-4 px-8 bg-blue-600 text-white mt-6\">Оставить отзыв</button>
+<!-- <button onclick=\"reviewBtn()\" class=\"py-4 px-8 bg-blue-600 text-white mt-6\">Оставить отзыв</button> -->
 </div>
 
 
@@ -815,7 +810,7 @@ class __TwigTemplate_3f55e05ba530b8075611d8a49736374cbb87449838f25851fd87aa3c377
         <div class=\"w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10\">
             <h1 class=\"font-extrabold text-2xl\">Оставьте заявку</h1>
             <p>Можем предложить специальные условия именно для вас!</p>
-            {% component 'commentsPost' %}
+            
         </div>
     </div>
 </div>", "E:\\openserver\\domains\\auto/themes/auto/pages/reviews.htm", "");

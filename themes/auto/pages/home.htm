@@ -19,8 +19,6 @@ pageNumber = "{{ :page }}"
 
 [contenteditor]
 
-[commentsPost]
-
 [formSubscribe]
 urlToUnsubscribe = "unsubscribe"
 urlToProfile = "subscriber-profile"
@@ -42,32 +40,14 @@ errorMessage = "Thanks for subscribe!"
              bg-white  rounded-lg shadow-md lg:shadow-lg">
              <i onclick="closeNav()" style=" font-size: 24px;" class="fas fa-times cursor-pointer "></i>
              <!-- Card Title -->
-             <h2 class="text-center font-semibold text-3xl lg:text-4xl text-gray-800">
+             <div class="flex-col text-xs md:text-base  mt-2">
+                <a class="hover:text-blue-500" href="tel:+79067031111">+7 (906)703-11-11</a>
+            </div>
+            <hr class="border-b-1 mb-1 border-blue-700 w-48 mt-1">
+             <h2 class="text-center font-semibold text-3xl lg:text-4xl text-gray-800">  
                  Заказать звонок
              </h2>
-             <form class="mt-10" method="POST">
-                 <!-- Name Input -->
-                 <input  type="text" placeholder="Ваше имя"
-                     class="block w-full py-3 px-1 mt-2 
-                     text-gray-800 appearance-none 
-                     bg-gray-200 pl-6
-                     focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                     required />
-                 <!-- Number Input -->
-                 <input  type="tel" placeholder="Ваш телефон*"
-                     class="block w-full py-3 px-1 mt-6 mb-4
-                     text-gray-800 appearance-none 
-                     bg-gray-200 pl-6
-                     focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                     required />
-                 <!-- Submit Buttton -->
-                 <button type="submit"
-                     class="w-full py-3 mt-10 bg-blue-600 rounded-sm
-                     font-medium text-white uppercase
-                     focus:outline-none hover:bg-gray-700 hover:shadow-none">
-                     Отправить
-                 </button>
-             </form>
+                {% component 'formSubscribe' %}
          </div>
      </div>
  </div>
@@ -102,7 +82,7 @@ errorMessage = "Thanks for subscribe!"
                      <div style="width: 90vw; top: 70px;" class="nav-submenu z-10  p-6 bg-gray-100 hidden absolute left-0">
                          <ul class=" flex flex-wrap items-center justify-evenly">
                             <li class=" relative flex m-2 w-1/5">
-                                <a href="{{ 'service1'|page }}" class=" flex items-center text-black hover:text-orange-500">
+                                <a href="{{ 'home'|page }}" class=" flex items-center text-black hover:text-orange-500">
                                     <i class="mr-2">
                                         <img src="https://auto-help-spb.ru/images/avtohelp.png" alt="" class="w-10">
                                     </i>Автомобильная помощь</a>
@@ -149,58 +129,58 @@ errorMessage = "Thanks for subscribe!"
                                         <img src="https://auto-help-spb.ru/images/car-mechanic-with-departure.png " alt="" class="w-10">
                                     </i>Автомеханик с выездом</a>
                             </li>
-                            <!-- <li class=" relative flex m-2 w-1/5">
-                                <a href="#" class=" flex items-center text-black hover:text-orange-500">
+                            <li class=" relative flex m-2 w-1/5">
+                                <a href="{{ 'service8'|page }}" class=" flex items-center text-black hover:text-orange-500">
                                     <i class="mr-2">
                                         <img src="https://auto-help-spb.ru/images/menu-5.svg" alt="" class="w-10">
                                     </i>Вытащить машину</a>
                             </li>
                             <li class=" relative flex m-2 w-1/5 mr-15">
-                                <a href="#" class=" flex items-center text-black hover:text-orange-500">
+                                <a href="{{ 'service9'|page }}" class=" flex items-center text-black hover:text-orange-500">
                                     <i class="mr-2">
                                         <img src=" https://auto-help-spb.ru/images/menu-10.svg" alt alt="" class="w-10">
                                     </i>Ремонт, замена и <br> подкачка колёс</a>
                             </li>
                             <li class=" relative flex m-2 w-1/5">
-                                <a href="#" class=" flex items-center text-black hover:text-orange-500">
+                                <a href="{{ 'service10'|page }}" class=" flex items-center text-black hover:text-orange-500">
                                     <i class="mr-2">
                                         <img src="https://auto-help-spb.ru/images/vehicle-diagnostics.png"  alt="" class="w-10">
                                      </i>Диагностика <br> автомобиля</a>
                             </li>
                             <li class=" relative flex m-2 w-1/5">
-                                <a href="#" class=" flex items-center text-black hover:text-orange-500">
+                                <a href="{{ 'service11'|page }}" class=" flex items-center text-black hover:text-orange-500">
                                         <i class="mr-2">
                                             <img src="https://auto-help-spb.ru/images/alarm-repair-and-deactivation.png " alt="" class="w-10">
                                         </i>Ремонт и отключение <br> сигнализации</a>
                             </li>
                             <li class=" relative flex m-2 w-1/5">
-                                <a href="#" class=" flex items-center text-black hover:text-orange-500">
+                                <a href="{{ 'service12'|page }}" class=" flex items-center text-black hover:text-orange-500">
                                     <i class="mr-2">
                                         <img src="https://auto-help-spb.ru/images/menu-2.svg" alt="" class="w-10">
                                     </i>Подвоз топлива
                                 </a>
                             </li>
                             <li class=" relative flex m-2 w-1/5">
-                                <a href="#" class=" flex items-center text-black hover:text-orange-500">
+                                <a href="{{ 'service13'|page }}" class=" flex items-center text-black hover:text-orange-500">
                                     <i class="mr-2">
                                         <img src="https://auto-help-spb.ru/images/engine-start.png" alt="" class="w-10">
                                     </i>Запуск двигателя
                                 </a>
                             </li>
                             <li class=" relative flex m-2 w-1/5">
-                                <a href="#" class=" flex items-center text-black hover:text-orange-500">
+                                <a href="{{ 'service14'|page }}" class=" flex items-center text-black hover:text-orange-500">
                                     <i class="mr-2">
                                         <img src="https://auto-help-spb.ru/images/menu-7.svg " alt="" class="w-10">
                                     </i>Буксировка автомобиля
                                 </a>
                             </li>
                             <li class=" relative flex m-2 w-1/5">
-                                <a href="#" class=" flex items-center text-black hover:text-orange-500">
+                                <a href="{{ 'service15'|page }}" class=" flex items-center text-black hover:text-orange-500">
                                     <i class="mr-2">
                                         <img src="https://auto-help-spb.ru/images/menu-8.svg" alt="" class="w-10">
                                     </i>Разблокировка АКПП
                                 </a>
-                            </li> -->
+                            </li>
                          </ul>
                          </div>
             
@@ -434,23 +414,6 @@ errorMessage = "Thanks for subscribe!"
  </div>
  </div>
 </div>
-<div class="flex items-center justify-center">
- <img src="https://auto-help-spb.ru/images/form-bg.jpg" class="absolute w-full" alt="">
- <div style="z-index: 3;" class="bg-white  lg:my-10  lg:w-11/12 text-center py-8">
-     <!-- <h1 class="mt-6 mb-4 font-extrabold text-2xl">Оставьте заявку</h1>
-     <p class="pb-4">Можем предложить специальные условия именно для вас!</p> -->
-     <!-- <form action="" class="flex lg:full  flex-wrap justify-evenly items-center">
-         <input class="bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4" type="text" placeholder="Ваше имя">
-         <input class="bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4" type="tel" placeholder="Ваш телефон*">
-         <div class="flex flex-wrap items-center justify-center lg:w-1/4">
-         <input class="w-9/12 sm:w-full bg-blue-700 text-white hover:bg-blue-900 p-2 lg:mt-5 px-6 outline-none" type="submit" value="Узнать стоимость">
-         <input class="hidden" type="file" id="file">
-         <label class="w-9/12 sm:w-full cursor-pointer mt-4 lg:mt-0" for="file"><i class="fas fa-paperclip mr-2"></i>Прикрепить фото</label>
-         </div>
-     </form> -->
-     {% component 'formSubscribe' %}
- </div>
-</div>
 <!-- Служба техпомощи компании section start -->
 <div class=" bg-gray-100">
  <div class="flex-col mx-4 md:mx-8 lg:mx-12 py-8 ">
@@ -493,25 +456,9 @@ errorMessage = "Thanks for subscribe!"
   </div>
 </div>
 <!-- Наши работы section end -->
-<div class="flex-col bg-gray-300">
+<!-- <div class="flex-col bg-gray-300">
  <h1 class="text-center font-extrabold text-4xl  py-12">Связаться с нами</h1>
  <div class="flex justify-evenly items-center flex-wrap mx-4 md:mx-12 lg:mx-24 py-12">
-     <div class="mapouter flex justify-center items-center"><div style="width: 90vw;" class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=moscow&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}</style><a href="https://www.embedgooglemap.net">adding google maps to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div></div>
-     <div class="w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10">
-         <h1 class="font-extrabold text-2xl">Оставьте заявку</h1>
-         <p>Можем предложить специальные условия именно для вас!</p>
-         <!-- <form action="" class="flex-col">
-             <input class="bg-gray-300 w-96 md:w-1/2 mt-4 p-2" type="text" placeholder="Ваше имя" required />
-             <input class="bg-gray-300 w-96 md:w-1/2 mt-4 p-2" type="tel" placeholder="Ваш телефон*" required />
-             <textarea class="bg-gray-300 w-96 md:w-1/2 mt-4 p-2" cols="30" rows="10" placeholder="Комментарий"></textarea>
-             <div class="flex text-center justify-center items-center cursor-pointer">
-             <input class="hidden" type="file" id="upload">
-             <label class="cursor-pointer" for="upload"><i class="fas fa-paperclip mr-2 cursor-pointer"></i>Прикрепить фото</label>
-             </div>
-             <input class="cursor-pointer w-96 md:w-1/2 bg-blue-700 text-white mt-2 hover:bg-blue-900 p-2 lg:mt-5 px-6 outline-none" type="submit" value="Узнать стоимость">  
-             </div>
-         </form> -->
-         {% component 'commentsPost' %}
-     </div>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=moscow&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:800px;}</style><a href="https://www.embedgooglemap.net">full width google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:800px;}</style></div></div>
  </div>
-</div>
+</div> -->

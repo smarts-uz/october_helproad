@@ -89,15 +89,16 @@ class __TwigTemplate_28d8b95c99ed85833b891f44ef942cbe3352adeb31977b6403d993f34a7
             // line 12
             echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["record"], "price", [], "any", false, false, true, 12), 12, $this->source), "html", null, true);
             echo " руб.</p>
-    <p onclick=\"orderFormBtn()\" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+    <p onclick=\"orderCallBtn()\" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+
 </div>
 ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 16
+            // line 17
             echo "    <li class=\"no-data\">";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["noRecordsMessage"] ?? null), 16, $this->source), "html", null, true);
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["noRecordsMessage"] ?? null), 17, $this->source), "html", null, true);
             echo "</li>
 ";
         }
@@ -118,7 +119,7 @@ class __TwigTemplate_28d8b95c99ed85833b891f44ef942cbe3352adeb31977b6403d993f34a7
 
     public function getDebugInfo()
     {
-        return array (  99 => 16,  90 => 12,  86 => 11,  83 => 10,  78 => 9,  74 => 7,  72 => 6,  70 => 5,  68 => 4,  66 => 3,  64 => 2,  62 => 1,);
+        return array (  100 => 17,  90 => 12,  86 => 11,  83 => 10,  78 => 9,  74 => 7,  72 => 6,  70 => 5,  68 => 4,  66 => 3,  64 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -135,7 +136,8 @@ class __TwigTemplate_28d8b95c99ed85833b891f44ef942cbe3352adeb31977b6403d993f34a7
 <div style=\"justify-content: center;\" class=\"flex flex-wrap  border-2 bg-white py-4 px-2 lg:px-10 justify-evenly text-center items-center my-6 \">
     <p class=\"sm:w-1/3 w-7/12 \">{{record.title}}</p>
     <p class='font-extrabold sm:w-1/3 w-7/12'>от {{ record.price }} руб.</p>
-    <p onclick=\"orderFormBtn()\" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+    <p onclick=\"orderCallBtn()\" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+
 </div>
 {% else %}
     <li class=\"no-data\">{{ noRecordsMessage }}</li>

@@ -1,4 +1,4 @@
-1611734773a:1:{s:14:"home/price.htm";a:6:{s:8:"fileName";s:14:"home/price.htm";s:7:"content";s:1120:"[builderList]
+1611757797a:1:{s:14:"home/price.htm";a:7:{s:8:"fileName";s:14:"home/price.htm";s:7:"content";s:1310:"[builderList]
 modelClass = "John\Priceservice\Models\PriceService"
 scope = "-"
 scopeValue = "{{ :scope }}"
@@ -7,6 +7,13 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[formSubscribe]
+urlToUnsubscribe = "unsubscribe"
+urlToProfile = "subscriber-profile"
+geo = "enabled"
+thanksMessage = "Thanks for subscribe!"
+errorMessage = "Thanks for subscribe!"
 ==
 {% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
@@ -20,11 +27,12 @@ pageNumber = "{{ :page }}"
 <div style="justify-content: center;" class="flex flex-wrap  border-2 bg-white py-4 px-2 lg:px-10 justify-evenly text-center items-center my-6 ">
     <p class="sm:w-1/3 w-7/12 ">{{record.title}}</p>
     <p class='font-extrabold sm:w-1/3 w-7/12'>от {{ record.price }} руб.</p>
-    <p onclick="orderFormBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+    <p onclick="orderCallBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+
 </div>
 {% else %}
     <li class="no-data">{{ noRecordsMessage }}</li>
-{% endfor %}";s:5:"mtime";i:1611635929;s:6:"markup";s:867:"{% set records = builderList.records %}
+{% endfor %}";s:5:"mtime";i:1611752716;s:6:"markup";s:869:"{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -36,8 +44,9 @@ pageNumber = "{{ :page }}"
 <div style="justify-content: center;" class="flex flex-wrap  border-2 bg-white py-4 px-2 lg:px-10 justify-evenly text-center items-center my-6 ">
     <p class="sm:w-1/3 w-7/12 ">{{record.title}}</p>
     <p class='font-extrabold sm:w-1/3 w-7/12'>от {{ record.price }} руб.</p>
-    <p onclick="orderFormBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+    <p onclick="orderCallBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+
 </div>
 {% else %}
     <li class="no-data">{{ noRecordsMessage }}</li>
-{% endfor %}";s:4:"code";N;s:11:"builderList";a:8:{s:10:"modelClass";s:37:"John\Priceservice\Models\PriceService";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}
+{% endfor %}";s:4:"code";N;s:11:"builderList";a:8:{s:10:"modelClass";s:37:"John\Priceservice\Models\PriceService";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:13:"formSubscribe";a:5:{s:16:"urlToUnsubscribe";s:11:"unsubscribe";s:12:"urlToProfile";s:18:"subscriber-profile";s:3:"geo";s:7:"enabled";s:13:"thanksMessage";s:21:"Thanks for subscribe!";s:12:"errorMessage";s:21:"Thanks for subscribe!";}}}

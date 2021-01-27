@@ -30,7 +30,7 @@ class __TwigTemplate_83ca2fb6d10b843a016028b703745786fd5cfebb008c8ec8c517023f1cd
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("escape" => 8);
+        $filters = array("escape" => 7);
         $functions = array();
 
         try {
@@ -60,28 +60,42 @@ class __TwigTemplate_83ca2fb6d10b843a016028b703745786fd5cfebb008c8ec8c517023f1cd
         $macros = $this->macros;
         // line 1
         echo "<div class=\"card\">
-    <div class=\"mt-6 mb-4 font-extrabold text-2xl\">
-        <h2>Оставьте заявку</h2>
-        <p class=\"pb-4\">Можем предложить специальные условия именно для вас!</p>
+    <div class=\"card-titlet\">
+        <h2></h2>
     </div>
 
     <div class=\"card-content author\">
-        <form name=\"form-subscribe-andradedev\" class=\"flex lg:full  flex-wrap justify-evenly items-center\" id=\"form-subscribe-andradedev\" data-request=\"";
-        // line 8
-        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["__SELF__"] ?? null), 8, $this->source), "html", null, true);
+        <form name=\"form-subscribe-andradedev\" id=\"form-subscribe-andradedev\" data-request=\"";
+        // line 7
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["__SELF__"] ?? null), 7, $this->source), "html", null, true);
         echo "::onAddSubscriber\" data-request-update=\"'";
-        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["__SELF__"] ?? null), 8, $this->source), "html", null, true);
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(($context["__SELF__"] ?? null), 7, $this->source), "html", null, true);
         echo "::alert': '#result'\">
-            <input type=\"text\" class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" name=\"name\" placeholder=\"* Ваше имя\" required>
-            <input type=\"text\" class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" name=\"tel\" placeholder=\"* Ваш телефон\" required>
-            <input type=\"email\" class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" name=\"email\" placeholder=\"* Email\" required>
+            <input type=\"text\" class=\"block w-full py-3 px-1 mt-2 
+            text-gray-800 appearance-none 
+            bg-gray-200 pl-6
+            focus:text-gray-500 focus:outline-none focus:border-gray-200\" name=\"name\" placeholder=\"* Name\" required>
+            <input type=\"text\" class=\"block w-full py-3 px-1 mt-6 mb-4
+            text-gray-800 appearance-none 
+            bg-gray-200 pl-6
+            focus:text-gray-500 focus:outline-none focus:border-gray-200\" name=\"tel\" placeholder=\"* tel\" required>
+            <input type=\"email\" class=\"block w-full py-3 px-1 mt-6 mb-4
+            text-gray-800 appearance-none 
+            bg-gray-200 pl-6
+            focus:text-gray-500 focus:outline-none focus:border-gray-200\" name=\"email\" placeholder=\"* Email\" required>
+            <input placeholder=\"Ваше сообщение\" class=\"block w-full py-3 pb-16 px-1 mt-2 
+                    text-gray-800 appearance-none 
+                    bg-gray-200 pl-6
+                    focus:text-gray-500 focus:outline-none focus:border-gray-200\" name=\"text\" required=\"\">
             <input type=\"hidden\" name=\"latitude\" id=\"latitude\">
             <input type=\"hidden\" name=\"longitude\" id=\"longitude\">
         </form>
     </div>
 
     <div class=\"card-action\">
-        <button class=\"w-9/12 sm:w-full bg-blue-700 text-white hover:bg-blue-900 p-2 lg:mt-5 px-6 outline-none\" form=\"form-subscribe-andradedev\">Узнать стоимость</button>
+        <button class=\"w-full py-3 mt-10 bg-blue-600 rounded-sm
+        font-medium text-white uppercase
+        focus:outline-none hover:bg-gray-700 hover:shadow-none\" form=\"form-subscribe-andradedev\">Отправить</button>
     </div>
     
     <div id=\"result\"></div>
@@ -100,29 +114,43 @@ class __TwigTemplate_83ca2fb6d10b843a016028b703745786fd5cfebb008c8ec8c517023f1cd
 
     public function getDebugInfo()
     {
-        return array (  71 => 8,  62 => 1,);
+        return array (  70 => 7,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<div class=\"card\">
-    <div class=\"mt-6 mb-4 font-extrabold text-2xl\">
-        <h2>Оставьте заявку</h2>
-        <p class=\"pb-4\">Можем предложить специальные условия именно для вас!</p>
+    <div class=\"card-titlet\">
+        <h2></h2>
     </div>
 
     <div class=\"card-content author\">
-        <form name=\"form-subscribe-andradedev\" class=\"flex lg:full  flex-wrap justify-evenly items-center\" id=\"form-subscribe-andradedev\" data-request=\"{{ __SELF__ }}::onAddSubscriber\" data-request-update=\"'{{__SELF__}}::alert': '#result'\">
-            <input type=\"text\" class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" name=\"name\" placeholder=\"* Ваше имя\" required>
-            <input type=\"text\" class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" name=\"tel\" placeholder=\"* Ваш телефон\" required>
-            <input type=\"email\" class=\"bg-gray-300 p-2 pr-16 ml-4 outline-none m-4 lg:w-1/4\" name=\"email\" placeholder=\"* Email\" required>
+        <form name=\"form-subscribe-andradedev\" id=\"form-subscribe-andradedev\" data-request=\"{{ __SELF__ }}::onAddSubscriber\" data-request-update=\"'{{__SELF__}}::alert': '#result'\">
+            <input type=\"text\" class=\"block w-full py-3 px-1 mt-2 
+            text-gray-800 appearance-none 
+            bg-gray-200 pl-6
+            focus:text-gray-500 focus:outline-none focus:border-gray-200\" name=\"name\" placeholder=\"* Name\" required>
+            <input type=\"text\" class=\"block w-full py-3 px-1 mt-6 mb-4
+            text-gray-800 appearance-none 
+            bg-gray-200 pl-6
+            focus:text-gray-500 focus:outline-none focus:border-gray-200\" name=\"tel\" placeholder=\"* tel\" required>
+            <input type=\"email\" class=\"block w-full py-3 px-1 mt-6 mb-4
+            text-gray-800 appearance-none 
+            bg-gray-200 pl-6
+            focus:text-gray-500 focus:outline-none focus:border-gray-200\" name=\"email\" placeholder=\"* Email\" required>
+            <input placeholder=\"Ваше сообщение\" class=\"block w-full py-3 pb-16 px-1 mt-2 
+                    text-gray-800 appearance-none 
+                    bg-gray-200 pl-6
+                    focus:text-gray-500 focus:outline-none focus:border-gray-200\" name=\"text\" required=\"\">
             <input type=\"hidden\" name=\"latitude\" id=\"latitude\">
             <input type=\"hidden\" name=\"longitude\" id=\"longitude\">
         </form>
     </div>
 
     <div class=\"card-action\">
-        <button class=\"w-9/12 sm:w-full bg-blue-700 text-white hover:bg-blue-900 p-2 lg:mt-5 px-6 outline-none\" form=\"form-subscribe-andradedev\">Узнать стоимость</button>
+        <button class=\"w-full py-3 mt-10 bg-blue-600 rounded-sm
+        font-medium text-white uppercase
+        focus:outline-none hover:bg-gray-700 hover:shadow-none\" form=\"form-subscribe-andradedev\">Отправить</button>
     </div>
     
     <div id=\"result\"></div>

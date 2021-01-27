@@ -1,7 +1,9 @@
-1611734772a:1:{s:12:"service1.htm";a:10:{s:8:"fileName";s:12:"service1.htm";s:7:"content";s:47380:"title = "service1"
+1611758576a:1:{s:12:"service1.htm";a:13:{s:8:"fileName";s:12:"service1.htm";s:7:"content";s:46056:"title = "service1"
 url = "/service1"
 layout = "default"
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 
 [blogPosts]
 pageNumber = "{{ :page }}"
@@ -11,6 +13,13 @@ noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
 categoryPage = "contact"
 postPage = "contact"
+
+[formSubscribe]
+urlToUnsubscribe = "unsubscribe"
+urlToProfile = "subscriber-profile"
+geo = "enabled"
+thanksMessage = "Thanks for subscribe!"
+errorMessage = "Email already exists!"
 ==
 <div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
     <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
@@ -76,29 +85,7 @@ postPage = "contact"
         <h2 class="text-center font-semibold text-3xl lg:text-4xl text-gray-800">
             Заказать звонок
         </h2>
-        <form class="mt-10" method="POST">
-            <!-- Name Input -->
-            <input  type="text" placeholder="Ваше имя"
-                class="block w-full py-3 px-1 mt-2 
-                text-gray-800 appearance-none 
-                bg-gray-200 pl-6
-                focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                required />
-            <!-- Number Input -->
-            <input  type="tel" placeholder="Ваш телефон*"
-                class="block w-full py-3 px-1 mt-6 mb-4
-                text-gray-800 appearance-none 
-                bg-gray-200 pl-6
-                focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                required />
-            <!-- Submit Buttton -->
-            <button type="submit"
-                class="w-full py-3 mt-10 bg-blue-600 rounded-sm
-                font-medium text-white uppercase
-                focus:outline-none hover:bg-gray-700 hover:shadow-none">
-                Отправить
-            </button>
-        </form>
+        {% component 'formSubscribe' %}
     </div>
 </div>
 </div>
@@ -402,14 +389,7 @@ postPage = "contact"
     <h1 class="text-center text-4xl pt-8">Цены на работы</h1>
     <div class="flex flex-wrap  my-10  justify-evenly">
     <div class=" flex-wrap lg:w-3/5 w-full flex-col justify-center items-center mx-4 lg:mx-0 font-thin">
-        {% set posts = blogPosts.posts %}
-        {% for post in posts %}
-        <div style="justify-content: center;" class="flex flex-wrap  border-2 bg-white py-4 px-2 lg:px-10 justify-evenly text-center items-center my-6 ">
-            <p class="sm:w-1/3 w-7/12 ">{{ post.title }}</p>
-            <p class='font-extrabold sm:w-1/3 w-7/12'>от {{ post.excerpt }} руб.</p>
-            <p onclick="orderFormBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
-        </div>
-        {% endfor %}
+        {% partial 'prices/price1' %}
     </div>
     
         <div class=" flex-col bg-blue-600 p-4 text-white py-10 mx-4 lg:mx-0  lg:w-48 w-full">
@@ -592,7 +572,7 @@ postPage = "contact"
         </form>
     </div>
 </div>
-</div>";s:5:"mtime";i:1611686957;s:6:"markup";s:47090:"<div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
+</div>";s:5:"mtime";i:1611755233;s:6:"markup";s:45530:"<div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
     <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
     <ul class="text-white mt-6 inline-block items-center cursor-pointer  text-2xl">
       <span class="border-b-2  hover:border-orange-500">  Услуги </span> <span onclick="openSubMenu()" class="plus text-4xl ml-4 hover:text-blue-500">+</span>
@@ -656,29 +636,7 @@ postPage = "contact"
         <h2 class="text-center font-semibold text-3xl lg:text-4xl text-gray-800">
             Заказать звонок
         </h2>
-        <form class="mt-10" method="POST">
-            <!-- Name Input -->
-            <input  type="text" placeholder="Ваше имя"
-                class="block w-full py-3 px-1 mt-2 
-                text-gray-800 appearance-none 
-                bg-gray-200 pl-6
-                focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                required />
-            <!-- Number Input -->
-            <input  type="tel" placeholder="Ваш телефон*"
-                class="block w-full py-3 px-1 mt-6 mb-4
-                text-gray-800 appearance-none 
-                bg-gray-200 pl-6
-                focus:text-gray-500 focus:outline-none focus:border-gray-200"
-                required />
-            <!-- Submit Buttton -->
-            <button type="submit"
-                class="w-full py-3 mt-10 bg-blue-600 rounded-sm
-                font-medium text-white uppercase
-                focus:outline-none hover:bg-gray-700 hover:shadow-none">
-                Отправить
-            </button>
-        </form>
+        {% component 'formSubscribe' %}
     </div>
 </div>
 </div>
@@ -982,14 +940,7 @@ postPage = "contact"
     <h1 class="text-center text-4xl pt-8">Цены на работы</h1>
     <div class="flex flex-wrap  my-10  justify-evenly">
     <div class=" flex-wrap lg:w-3/5 w-full flex-col justify-center items-center mx-4 lg:mx-0 font-thin">
-        {% set posts = blogPosts.posts %}
-        {% for post in posts %}
-        <div style="justify-content: center;" class="flex flex-wrap  border-2 bg-white py-4 px-2 lg:px-10 justify-evenly text-center items-center my-6 ">
-            <p class="sm:w-1/3 w-7/12 ">{{ post.title }}</p>
-            <p class='font-extrabold sm:w-1/3 w-7/12'>от {{ post.excerpt }} руб.</p>
-            <p onclick="orderFormBtn()" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
-        </div>
-        {% endfor %}
+        {% partial 'prices/price1' %}
     </div>
     
         <div class=" flex-col bg-blue-600 p-4 text-white py-10 mx-4 lg:mx-0  lg:w-48 w-full">
@@ -1172,4 +1123,4 @@ postPage = "contact"
         </form>
     </div>
 </div>
-</div>";s:4:"code";N;s:5:"title";s:8:"service1";s:3:"url";s:9:"/service1";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:13:"vskrytie-avto";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:7:"contact";s:8:"postPage";s:7:"contact";}}}
+</div>";s:4:"code";N;s:5:"title";s:8:"service1";s:3:"url";s:9:"/service1";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:13:"vskrytie-avto";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:7:"contact";s:8:"postPage";s:7:"contact";}s:13:"formSubscribe";a:5:{s:16:"urlToUnsubscribe";s:11:"unsubscribe";s:12:"urlToProfile";s:18:"subscriber-profile";s:3:"geo";s:7:"enabled";s:13:"thanksMessage";s:21:"Thanks for subscribe!";s:12:"errorMessage";s:21:"Email already exists!";}}}

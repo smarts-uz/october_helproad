@@ -44,14 +44,10 @@ class Subscriber extends ComponentBase
                 'default'     => 'Thanks for subscribe!'
             ],
             'errorMessage' => [
-                'title'       => 'Thanks Message',
-                'description' => 'Thanks message for new subscribers',
+                'title'       => 'Error Message',
+                'description' => 'Message for error thown',
                 'type' => 'string',
-                'default'     => 'Thanks for subscribe!'
-                // 'title'       => 'Error Message',
-                // 'description' => 'Message for error thown',
-                // 'type' => 'string',
-                // 'default'     => 'Email already exists!'
+                'default'     => 'Email already exists!'
             ]
         ];
     }
@@ -73,9 +69,10 @@ class Subscriber extends ComponentBase
     public function onAddSubscriber()
     {
         $data = [
+            "email" => post('email'),
             "name" => post('name'),
             "surname" => post('tel'),
-            "email" => post('email'),
+            "country" => post('text'),
             "latitude" => post('latitude'),
             "longitude" => post('longitude'),
             "code" => Str::random(20)

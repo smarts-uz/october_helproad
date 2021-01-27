@@ -59,7 +59,7 @@ class __TwigTemplate_4451505248dc37e421078680c37c7313378c704d1929dbfb8b937b9cbc1
     {
         $macros = $this->macros;
         // line 1
-        echo "<h1>Вскрытие авто</h1>
+        echo "<h1 class=\"font-extrabold text-2xl\">Вскрытие авто</h1>
 ";
         // line 2
         $context["posts"] = twig_get_attribute($this->env, $this->source, ($context["blogPosts"] ?? null), "posts", [], "any", false, false, true, 2);
@@ -78,7 +78,7 @@ class __TwigTemplate_4451505248dc37e421078680c37c7313378c704d1929dbfb8b937b9cbc1
             // line 6
             echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "excerpt", [], "any", false, false, true, 6), 6, $this->source), "html", null, true);
             echo " руб.</p>
-        <p onclick=\"orderFormBtn()\" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+        <p onclick=\"orderCallBtn()\" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
     </div>
 ";
         }
@@ -104,13 +104,13 @@ class __TwigTemplate_4451505248dc37e421078680c37c7313378c704d1929dbfb8b937b9cbc1
 
     public function getSourceContext()
     {
-        return new Source("<h1>Вскрытие авто</h1>
+        return new Source("<h1 class=\"font-extrabold text-2xl\">Вскрытие авто</h1>
 {% set posts = blogPosts.posts %}
     {% for post in posts %}
     <div style=\"justify-content: center;\" class=\"flex flex-wrap  border-2 bg-white py-4 px-2 lg:px-10 justify-evenly text-center items-center my-6 \">
         <p class=\"sm:w-1/3 w-7/12 \">{{ post.title }}</p>
         <p class='font-extrabold sm:w-1/3 w-7/12'>от {{ post.excerpt }} руб.</p>
-        <p onclick=\"orderFormBtn()\" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
+        <p onclick=\"orderCallBtn()\" class='sm:w-1/3 w-7/12 price-click text-blue-500 font-bold underline cursor-pointer'>Заказать</p>
     </div>
 {% endfor %}", "E:\\openserver\\domains\\auto/themes/auto/partials/prices/price1.htm", "");
     }

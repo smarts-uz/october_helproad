@@ -1,4 +1,4 @@
-1611734773a:1:{s:16:"home/service.htm";a:6:{s:8:"fileName";s:16:"home/service.htm";s:7:"content";s:1231:"[builderList]
+1611757797a:1:{s:16:"home/service.htm";a:6:{s:8:"fileName";s:16:"home/service.htm";s:7:"content";s:1237:"[builderList]
 modelClass = "John\Priceservice\Models\PriceService"
 scope = "-"
 scopeValue = "{{ :scope }}"
@@ -17,14 +17,14 @@ pageNumber = "{{ :page }}"
 
 
 {% for record in records %}
-    <div class="item shadow-2xl  lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500"> <img class='rounded-full' src=" {{ record.image|media }} " alt="">
+    <div class="item shadow-2xl h-full lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500"> <img class='rounded-full' src=" {{ record.image|media }} " alt="">
         <p class="py-4">{{ record.title }}</p>
         <p  class=" py-4 font-extrabold text-lg">от {{ record.price }} руб.</p>
         <button onclick="orderFormBtn()" class="font-extrabold text-blue-500 border-2 border-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white transition duration-300">Заказать</button>
     </div>
  {% else %}
     <li class="no-data">{{ noRecordsMessage }}</li>
-{% endfor %}";s:5:"mtime";i:1611636381;s:6:"markup";s:978:"{% set records = builderList.records %}
+{% endfor %}";s:5:"mtime";i:1611756563;s:6:"markup";s:984:"{% set records = builderList.records %}
 {% set displayColumn = builderList.displayColumn %}
 {% set noRecordsMessage = builderList.noRecordsMessage %}
 {% set detailsPage = builderList.detailsPage %}
@@ -33,7 +33,7 @@ pageNumber = "{{ :page }}"
 
 
 {% for record in records %}
-    <div class="item shadow-2xl  lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500"> <img class='rounded-full' src=" {{ record.image|media }} " alt="">
+    <div class="item shadow-2xl h-full lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500"> <img class='rounded-full' src=" {{ record.image|media }} " alt="">
         <p class="py-4">{{ record.title }}</p>
         <p  class=" py-4 font-extrabold text-lg">от {{ record.price }} руб.</p>
         <button onclick="orderFormBtn()" class="font-extrabold text-blue-500 border-2 border-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white transition duration-300">Заказать</button>

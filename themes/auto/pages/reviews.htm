@@ -15,8 +15,6 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
-
-[commentsPost]
 ==
 <div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
     <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
@@ -310,7 +308,7 @@ pageNumber = "{{ :page }}"
      выполненных работ! Наша команда опытных профессионалов
       поможет в любой ситуации 24/7! Если вы стали нашим клиентом, 
       то му будем рады вашему отзыву о нашей работе!</p>
-<button onclick="reviewBtn()" class="py-4 px-8 bg-blue-600 text-white mt-6">Оставить отзыв</button>
+<!-- <button onclick="reviewBtn()" class="py-4 px-8 bg-blue-600 text-white mt-6">Оставить отзыв</button> -->
 </div>
 
 
@@ -347,7 +345,7 @@ pageNumber = "{{ :page }}"
         <div class="w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10">
             <h1 class="font-extrabold text-2xl">Оставьте заявку</h1>
             <p>Можем предложить специальные условия именно для вас!</p>
-            {% component 'commentsPost' %}
+            
         </div>
     </div>
 </div>

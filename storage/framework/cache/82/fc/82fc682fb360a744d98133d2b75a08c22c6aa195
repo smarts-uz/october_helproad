@@ -1,4 +1,4 @@
-1611734772a:1:{s:11:"contact.htm";a:14:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:23923:"title = "Contact"
+1611758575a:1:{s:11:"contact.htm";a:13:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:23875:"title = "Contact"
 url = "/contact"
 layout = "default"
 meta_title = "Contact"
@@ -7,8 +7,6 @@ robot_index = "index"
 robot_follow = "follow"
 
 [contenteditor]
-
-[commentsPost]
 ==
 <div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
     <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
@@ -229,10 +227,10 @@ robot_follow = "follow"
     <div class="w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10">
         <h1 class="font-extrabold text-2xl">Оставьте заявку</h1>
         <p>Можем предложить специальные условия именно для вас!</p>
-        {% component 'commentsPost' %}
+        
     </div>
 </div>
-</div>";s:5:"mtime";i:1611733491;s:6:"markup";s:23738:"<div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
+</div>";s:5:"mtime";i:1611739536;s:6:"markup";s:23708:"<div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
     <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
     <ul class="text-white mt-6 inline-block items-center cursor-pointer  text-2xl">
       <span class="border-b-2  hover:border-orange-500">  Услуги </span> <span onclick="openSubMenu()" class="plus text-4xl ml-4 hover:text-blue-500">+</span>
@@ -451,7 +449,7 @@ robot_follow = "follow"
     <div class="w-96 lg:w-1/2 flex-col bg-white justify-between items-center text-center py-10 my-10">
         <h1 class="font-extrabold text-2xl">Оставьте заявку</h1>
         <p>Можем предложить специальные условия именно для вас!</p>
-        {% component 'commentsPost' %}
+        
     </div>
 </div>
-</div>";s:4:"code";N;s:5:"title";s:7:"Contact";s:3:"url";s:8:"/contact";s:6:"layout";s:7:"default";s:10:"meta_title";s:7:"Contact";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:13:"contenteditor";a:0:{}s:12:"commentsPost";a:0:{}}}
+</div>";s:4:"code";N;s:5:"title";s:7:"Contact";s:3:"url";s:8:"/contact";s:6:"layout";s:7:"default";s:10:"meta_title";s:7:"Contact";s:9:"is_hidden";s:1:"0";s:11:"robot_index";s:5:"index";s:12:"robot_follow";s:6:"follow";s:13:"contenteditor";a:0:{}}}
